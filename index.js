@@ -12,7 +12,7 @@ class getLastClick {
         this.eventBus.on("click-pdf", this.ChangeSelection)
     }
     getLast(detail) {
-        console.log("get last")
+        // console.log("get last")
         lastClick = getSelection().getRangeAt(0)
     }
 
@@ -23,7 +23,7 @@ class getLastClick {
             return
         }
 
-        console.log("get click")
+        // console.log("get click")
         let selection = getSelection()
         setTimeout(() => {
             selection.removeAllRanges();
