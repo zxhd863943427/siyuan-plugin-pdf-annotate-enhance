@@ -1,0 +1,25 @@
+{
+    "name": "siyuan-plugin-pdf-annotate-enhance",
+    "author": "zxhd863943427",
+    "url": "https://github.com/zxhd863943427/siyuan-plugin-pdf-annotate-enhance",
+    "version": "0.2.1",
+    "displayName": {
+        "default": "pdf标注增强",
+        "zh_CN": "pdf标注增强"
+    },
+    "description": {
+        "default": "标注后自动跳转到文档的位置",
+        "zh_CN": "标注后自动跳转到文档的位置"
+    },
+    "readme": {
+        "default": "README.md"
+    },
+    "funding": {
+        "openCollective": "",
+        "patreon": "",
+        "github": "",
+        "custom": [
+          "https://afdian.net/a/zxhd86"
+        ]
+      }
+}
