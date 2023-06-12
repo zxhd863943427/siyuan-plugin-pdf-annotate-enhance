@@ -10,6 +10,13 @@ class getLastClick {
         this.eventBus = eventBus
         this.eventBus.on("click-editorcontent", this.getLast)
         this.eventBus.on("click-pdf", this.ChangeSelection)
+        this.eventBus.on("ws-main", this.getLastAfterEdit)
+    }
+    getLastAfterEdit({ detail: detail }){
+        if (detail.cmd === "transactions"){
+            // console.log(detail)
+            lastClick = getSelection().getRangeAt(0)
+        }
     }
     getLast(detail) {
         // console.log("get last")
