@@ -28,7 +28,7 @@ class getLastClick {
         setTimeout(() => {
             selection.removeAllRanges();
             selection.addRange(lastClick)
-        }, 300)
+        }, 100)
     }
     stop(){
         this.eventBus.off("click-editorcontent", this.getLast)
