@@ -37,9 +37,8 @@ class getLastClick {
 }
 
 function setIfTextChose(t) {
-    let target = t.event.srcElement
-    let isDiv = target instanceof HTMLDivElement
-    if (isDiv && hasClass(target, "textLayer") && !t.event.altKey) {
+    let selectText = getSelection().getRangeAt(0).cloneContents().childNodes.length > 0
+    if (selectText) {
         TextChose = true
         setTimeout(() => { TextChose = false }, 10000)
     }
